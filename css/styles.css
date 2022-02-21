@@ -193,6 +193,7 @@ img {
     url("../images/hero.jpg");
 
   background-size: cover;
+  background-repeat: no-repeat;
   background-color: var(--main-background-color);
   padding-top: 200px;
   padding-bottom: 200px;

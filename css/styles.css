@@ -145,7 +145,19 @@ img {
 }
 
 /*contacts*/
+.contacts-header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts-header-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts-header-list-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -169,23 +181,16 @@ img {
   color: var(--akcent-text-color);
 }
 
-.contacts-header-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.contacts-header-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
 /*---------------hero-------------*/
 .hero {
+  max-width: 1600px;
+  max-height: 600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero.jpg");
+
   background-size: cover;
   background-color: var(--main-background-color);
   padding-top: 200px;
@@ -237,10 +242,12 @@ img {
 }
 
 .specifics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
   background-color: var(--second-background-color);
 }
 
@@ -301,9 +308,8 @@ img {
 
 .social-list {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-right: 32px;
-  padding-left: 32px;
 }
 
 .social-item:not(:last-child) {
@@ -394,6 +400,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .adress {
@@ -445,11 +452,6 @@ img {
   color: var(--akcent-text-color);
 }
 
-.footer-social {
-  padding-top: 72px;
-  width: 206px;
-}
-
 .footer-text {
   margin-bottom: 20px;
   font-weight: 700;
@@ -467,6 +469,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-social-link {
@@ -542,8 +548,8 @@ img {
   margin-top: 30px;
 }
 
-.projects-list-item:hover,
-.projects-list-item:focus {
+.projects-list-link:hover,
+.projects-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
